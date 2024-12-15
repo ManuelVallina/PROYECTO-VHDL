@@ -1,7 +1,0 @@
-Running: xsim.dir/AscensorTop_behav/xsimk.exe -simmode gui -wdb AscensorTop_behav.wdb -simrunnum 0 -socket 55165
-Design successfully loaded
-Design Loading Memory Usage: 9688 KB (Peak: 9688 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 10188 KB (Peak: 10188 KB)
-Simulation CPU Usage: 31 ms

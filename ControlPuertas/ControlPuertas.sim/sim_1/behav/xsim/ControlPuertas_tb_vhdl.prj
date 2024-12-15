@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../ControlPuertas.srcs/sources_1/new/ControlPuertas.vhd" \
-"../../../../ControlPuertas.srcs/sim_1/new/ControlPuertas_tb.vhd" \
-
-# Do not sort compile order
-nosort
