@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PruebaSelector.srcs/sources_1/imports/new/Antirrebotes.vhd" \
+"../../../../PruebaSelector.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd" \
+"../../../../PruebaSelector.srcs/sources_1/new/MultiplicadorPiso.vhd" \
+"../../../../PruebaSelector.srcs/sources_1/new/PruebaSelector.vhd" \
+"../../../../PruebaSelector.srcs/sources_1/imports/new/SelectorPiso.vhd" \
+"../../../../PruebaSelector.srcs/sim_1/new/tb_Top_Selector_Multiplicador.vhd" \
+
+# Do not sort compile order
+nosort

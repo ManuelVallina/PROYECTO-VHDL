@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/LAB/PruebaSelector/PruebaSelector.srcs/sources_1/imports/new/Antirrebotes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Antirrebotes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/LAB/PruebaSelector/PruebaSelector.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BotoneraAntirrebotes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/LAB/PruebaSelector/PruebaSelector.srcs/sources_1/new/MultiplicadorPiso.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MultiplicadorPiso'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/LAB/PruebaSelector/PruebaSelector.srcs/sources_1/new/PruebaSelector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PruebaSelector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/LAB/PruebaSelector/PruebaSelector.srcs/sources_1/imports/new/SelectorPiso.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SelectorPiso'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/LAB/PruebaSelector/PruebaSelector.srcs/sim_1/new/tb_Top_Selector_Multiplicador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Top_Selector_Multiplicador'

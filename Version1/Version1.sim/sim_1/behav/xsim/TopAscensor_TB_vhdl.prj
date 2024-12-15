@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Version1.srcs/sources_1/imports/LAB/Antirrebotes/Antirrebotes.srcs/sources_1/new/Antirrebotes.vhd" \
+"../../../../Version1.srcs/sources_1/imports/LAB/Antirrebotes/Antirrebotes.srcs/sources_1/new/BotoneraAntirrebotes.vhd" \
+"../../../../Version1.srcs/sources_1/imports/LAB/ControlMovimiento/ControlMovimiento.srcs/sources_1/new/ControlMovimiento.vhd" \
+"../../../../Version1.srcs/sources_1/imports/LAB/ControlPuertas/ControlPuertas.srcs/sources_1/new/ControlPuertas.vhd" \
+"../../../../Version1.srcs/sources_1/imports/new/MultiplicadorPiso.vhd" \
+"../../../../Version1.srcs/sources_1/imports/LAB/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd" \
+"../../../../Version1.srcs/sources_1/new/TOPv1.vhd" \
+"../../../../Version1.srcs/sim_1/new/TopAscensor_TB.vhd" \
+
+# Do not sort compile order
+nosort
