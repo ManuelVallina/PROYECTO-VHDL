@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd" \
-"../../../../SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd" \
-"../../../../SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd" \
-"../../../../SelectorPiso.srcs/sim_1/new/SelectorPiso_tb.vhd" \
-
-# Do not sort compile order
-nosort
