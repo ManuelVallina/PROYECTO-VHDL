@@ -17,7 +17,7 @@ architecture Behavioral of Temporizador is
 begin
     process (CLK, RESET)
     begin
-        if RESET = '1' then
+        if RESET = '0' then
             counter <= 0;
             active <= '0';
             TIME_OUT <= '0';

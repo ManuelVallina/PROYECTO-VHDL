@@ -64,7 +64,7 @@ BotoneraAnti: BotoneraAntirrebotes
 
 process (CLK,RST)
 begin
-if RST = '1' then
+if RST = '0' then
         piso_seleccionado <= "00"; -- Reset a piso 0 por defecto
 elsif rising_edge(CLK) then
   case botones_filtrados is 

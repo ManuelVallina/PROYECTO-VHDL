@@ -30,7 +30,7 @@ architecture Behavioral of FSM is
 
     -- Señales del temporizador
     signal timer_timeout : STD_LOGIC := '0';         -- Salida del temporizador
-    signal time_set : INTEGER := 100;               -- Tiempo para cada estado
+    signal time_set : INTEGER := 100000000;               -- Tiempo para cada estado
 
     signal DESEADO :  STD_LOGIC_VECTOR(1 downto 0):="00";
     signal DESEADO_1 :  STD_LOGIC_VECTOR(1 downto 0):="00";
@@ -57,7 +57,7 @@ begin
     -- Proceso síncrono para actualizar el estado y piso_actual
     process (CLK, RESET)
     begin
-        if RESET = '1' then
+        if RESET = '0' then
             estoy <= IDLE;
             piso_actual <= piso;
         elsif rising_edge(CLK) then
@@ -78,7 +78,7 @@ begin
     process (estoy, piso_actual, timer_timeout)
     begin
         sig_estado <= estoy;  -- Por defecto, permanecer en el mismo estado
-        time_set <= 100000;      -- Tiempo predeterminado (en ciclos de reloj)
+        time_set <= 100000000;      -- Tiempo predeterminado (en ciclos de reloj)
        -- ACTUAL <= piso_actual;
         case estoy is
             when IDLE =>
@@ -97,7 +97,7 @@ begin
                 end if;
          
             when ABIERTO =>
-                time_set <= 100000;  -- Tiempo de espera con la puerta abierta
+                time_set <= 100000000;  -- Tiempo de espera con la puerta abierta
                 if timer_timeout = '1' and piso_actual /= objetivo then
                     piso <= objetivo;
                     sig_estado <= CERRADO;
@@ -106,7 +106,7 @@ begin
 
             when CERRADO =>
                 
-                time_set <= 100000;  -- Tiempo de espera con la puerta cerrada
+                time_set <= 100000000;  -- Tiempo de espera con la puerta cerrada
                 if timer_timeout = '1' then
                     sig_estado <= MARCHA;
                 end if;
@@ -116,7 +116,7 @@ begin
                 if piso_actual = piso then
                     sig_estado <= VALIDANDO;
                 else
-                 time_set <= 100000;
+                 time_set <= 100000000;
                  if timer_timeout = '1' then
                     sig_estado <= ACTUALIZAR;
                  end if;

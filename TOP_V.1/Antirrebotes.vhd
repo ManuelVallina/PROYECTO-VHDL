@@ -47,7 +47,7 @@ signal contador    : std_logic_vector(contador_SIZE downto 0) := (others => '0')
 begin
     process(CLK,RST,logic_IN)
     begin
-	 if (RST='1') then
+	 if (RST='0') then
 		logic_OUT <= logic_IN;
 	 elsif (CLK'event and CLK='1') then									--Si hay flanco de reloj
 		 if (logic_prev XOR logic_in)='1' then							--Si 	la entrada es diferente al estado previo almacenado
