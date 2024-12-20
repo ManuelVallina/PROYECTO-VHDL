@@ -6,3 +6,5 @@ V3.0 -->
 Se ha creado dos posibles formas de ver las salidas en la FPGA que se añadirian a los codigos de Manu para comprobar que todo funciona bien
 V4.0 --> 
 Se ha solucionado el error de el piso actual y ya se actualiza, se ha usado un test bench y funciona de acurerdo a lo esperado.
+V5.0 -->
+Se han modificado los códigos de Manu de puerta y mover ascensor para que funcione con las salidas de la FSM
