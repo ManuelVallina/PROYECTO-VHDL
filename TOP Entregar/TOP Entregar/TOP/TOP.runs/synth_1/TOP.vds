@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 21 15:40:27 2025
+# Process ID: 24508
+# Current directory: C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.runs/synth_1/TOP.vds
+# Journal file: C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.runs/synth_1\vivado.jou
+# Running On        :LAPTOP-4TJH4QHR
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency     :1498 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16951 MB
+# Swap memory       :15725 MB
+# Total Virtual     :32676 MB
+# Available Virtual :6493 MB
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 486.992 ; gain = 201.504
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/utils_1/imports/synth_1/TOP.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19584
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1360.648 ; gain = 448.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:49]
+INFO: [Synth 8-3491] module 'SelectorPiso' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:34' bound to instance 'inst_SelectorPiso' of component 'SelectorPiso' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'SelectorPiso' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:42]
+INFO: [Synth 8-3491] module 'BotoneraAntirrebotes' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:34' bound to instance 'BotoneraAnti' of component 'BotoneraAntirrebotes' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'BotoneraAntirrebotes' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:41]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote0' of component 'Antirrebotes' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'Antirrebotes' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Antirrebotes' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:41]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote1' of component 'Antirrebotes' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:58]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote2' of component 'Antirrebotes' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:66]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote3' of component 'Antirrebotes' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'BotoneraAntirrebotes' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'SelectorPiso' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:42]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:5' bound to instance 'inst_FSM' of component 'FSM' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:22]
+INFO: [Synth 8-3491] module 'Temporizador' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/imports/new/Temporizador.vhd:5' bound to instance 'TEMPORIZADOR_INST' of component 'Temporizador' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Temporizador' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/imports/new/Temporizador.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Temporizador' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/imports/new/Temporizador.vhd:14]
+WARNING: [Synth 8-614] signal 'DESEADO' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:85]
+WARNING: [Synth 8-614] signal 'objetivo' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:85]
+WARNING: [Synth 8-614] signal 'piso' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:85]
+WARNING: [Synth 8-614] signal 'boton_reinicio' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:85]
+WARNING: [Synth 8-614] signal 'piso' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:22]
+INFO: [Synth 8-3491] module 'ControlMovimiento' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/Downloads/ControlMovimiento.vhd:26' bound to instance 'inst_ControlMovimiento' of component 'ControlMovimiento' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'ControlMovimiento' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/Downloads/ControlMovimiento.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ControlMovimiento' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/Downloads/ControlMovimiento.vhd:35]
+INFO: [Synth 8-3491] module 'ControlPuertas' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/Downloads/ControlPuertas.vhd:25' bound to instance 'inst_ControlPuertas' of component 'ControlPuertas' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'ControlPuertas' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/Downloads/ControlPuertas.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'ControlPuertas' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/Downloads/ControlPuertas.vhd:34]
+INFO: [Synth 8-3491] module 'MultiplicadorPiso' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/MultiplicadorPiso.vhd:25' bound to instance 'passthrough_inst' of component 'MultiplicadorPiso' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'MultiplicadorPiso' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/MultiplicadorPiso.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MultiplicadorPiso' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/MultiplicadorPiso.vhd:32]
+INFO: [Synth 8-3491] module 'Bin_to_BCD' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Bin_to_BCD.vhd:28' bound to instance 'decoder_inst' of component 'Bin_to_BCD' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'Bin_to_BCD' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Bin_to_BCD.vhd:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Bin_to_BCD.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Bin_to_BCD' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Bin_to_BCD.vhd:36]
+INFO: [Synth 8-3491] module 'FSM_DISPLAY' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:5' bound to instance 'fsm_display_inst' of component 'FSM_DISPLAY' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'FSM_DISPLAY' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:54]
+WARNING: [Synth 8-614] signal 'pasa_cerrado' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:50]
+WARNING: [Synth 8-614] signal 'ACCION_MOTOR' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:50]
+WARNING: [Synth 8-614] signal 'boton_reset' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'FSM_DISPLAY' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/FSM_DISPLAY.vhd:23]
+INFO: [Synth 8-3491] module 'Accion_abierto' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:24' bound to instance 'inst_anim_abierto' of component 'Accion_abierto' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'Accion_abierto' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:69]
+WARNING: [Synth 8-614] signal 'mostrar' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:63]
+WARNING: [Synth 8-614] signal 'NUM' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:63]
+WARNING: [Synth 8-614] signal 'guion' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:63]
+WARNING: [Synth 8-614] signal 'flecha' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'Accion_abierto' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_abierto.vhd:35]
+INFO: [Synth 8-3491] module 'Accion_marcha' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_marcha.vhd:24' bound to instance 'inst_anim_marcha' of component 'Accion_marcha' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'Accion_marcha' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_marcha.vhd:34]
+INFO: [Synth 8-226] default block is never used [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_marcha.vhd:65]
+WARNING: [Synth 8-614] signal 'mostrar' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_marcha.vhd:61]
+WARNING: [Synth 8-614] signal 'NUM' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_marcha.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Accion_marcha' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/Accion_marcha.vhd:34]
+INFO: [Synth 8-3491] module 'accion_cerrado' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/accion_cerrado.vhd:24' bound to instance 'inst_anim_cerrar' of component 'Accion_cerrado' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'accion_cerrado' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/accion_cerrado.vhd:33]
+WARNING: [Synth 8-614] signal 'inicio' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/accion_cerrado.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'accion_cerrado' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/accion_cerrado.vhd:33]
+INFO: [Synth 8-3491] module 'Accion_error' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/Accion_error.vhd:26' bound to instance 'inst_anim_error' of component 'Accion_error' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:308]
+INFO: [Synth 8-638] synthesizing module 'Accion_error' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/Accion_error.vhd:37]
+INFO: [Synth 8-226] default block is never used [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/Accion_error.vhd:71]
+WARNING: [Synth 8-614] signal 'mostrar' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/Accion_error.vhd:65]
+WARNING: [Synth 8-614] signal 'guion' is read in the process but is not in the sensitivity list [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/Accion_error.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'Accion_error' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/Accion_error.vhd:37]
+INFO: [Synth 8-3491] module 'SalidaPantalla' declared at 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/SalidaPantalla.vhd:24' bound to instance 'inst_salida_pantalla' of component 'SalidaPantalla' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:316]
+INFO: [Synth 8-638] synthesizing module 'SalidaPantalla' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/SalidaPantalla.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/SalidaPantalla.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'SalidaPantalla' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/new/SalidaPantalla.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/new/TOP.vhd:49]
+WARNING: [Synth 8-7129] Port ACCION_PUERTA in module FSM_DISPLAY is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1473.520 ; gain = 561.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1473.520 ; gain = 561.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1473.520 ; gain = 561.809
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1473.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1573.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1573.125 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estoy_reg' in module 'FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'estoy_reg' in module 'FSM_DISPLAY'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   error |                              001 |                              110
+                 abierto |                              010 |                              010
+                 cerrado |                              011 |                              011
+                  marcha |                              100 |                              100
+               validando |                              101 |                              001
+              actualizar |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estoy_reg' using encoding 'sequential' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'piso_reg' [C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:75]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   error |                               00 |                               11
+                 abierto |                               01 |                               00
+                 cerrado |                               10 |                               01
+                  marcha |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estoy_reg' using encoding 'sequential' in module 'FSM_DISPLAY'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   7 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   8 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 2     
+	   9 Input    7 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 17    
+	   5 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    34|
+|3     |LUT1   |     6|
+|4     |LUT2   |    59|
+|5     |LUT3   |    20|
+|6     |LUT4   |    17|
+|7     |LUT5   |    38|
+|8     |LUT6   |    58|
+|9     |FDCE   |    48|
+|10    |FDPE   |     8|
+|11    |FDRE   |   108|
+|12    |LD     |     2|
+|13    |LDC    |     4|
+|14    |IBUF   |     7|
+|15    |OBUF   |    20|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:42 . Memory (MB): peak = 1573.125 ; gain = 561.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 1573.125 ; gain = 661.414
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1573.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1573.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 2 instances
+  LDC => LDCE: 4 instances
+
+Synth Design complete | Checksum: 5607d61e
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1573.125 ; gain = 1078.949
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1573.125 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mmval/OneDrive/Documentos/UNIVERSIDAD MANU/CUARTO/S.E.D/PROYECTO VHDL/TOP/TOP.runs/synth_1/TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 21 15:41:39 2025...

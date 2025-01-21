@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd" \
+"../../../../TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd" \
+"../../../../TOP.srcs/sources_1/imports/Downloads/ControlMovimiento.vhd" \
+"../../../../TOP.srcs/sources_1/imports/Downloads/ControlPuertas.vhd" \
+"../../../../TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd" \
+"../../../../TOP.srcs/sources_1/imports/new/MultiplicadorPiso.vhd" \
+"../../../../TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd" \
+"../../../../TOP.srcs/sources_1/new/TOP.vhd" \
+"../../../../TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/imports/new/Temporizador.vhd" \
+"../../../../TOP.srcs/sim_1/new/TOP_tb.vhd" \
+
+# Do not sort compile order
+nosort
