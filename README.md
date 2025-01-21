@@ -1,0 +1,1 @@
+En este proyecto de VHDL, entre sus integrantes, Manuel Vallina Vides, Hugo Vigil Velasco y Daniel Vázquez Chuvieco, se ha credo un ascensor de 4 plantas (piso 0 - piso 3), que incluye como entradas una botonera con los pisos, además del botón de reset, cuenta con salidas como el display y los leds.
