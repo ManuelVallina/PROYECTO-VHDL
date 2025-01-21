@@ -1,0 +1,50 @@
+#--------------------------------------------------------------------------
+# AMD Vivado v2024.1 (64-bit)
+# SW Build: 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build: 5076995 on Wed May 22 18:29:18 MDT 2024
+# Current time: Fri Dec 20 12:39:24 CET 2024
+# Process ID (PID): 35268
+# User: danie
+# OS: Windows 11
+# Project: TOP
+# Part: xc7a100tcsg324-1
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with AMD.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Fri Dec 20 12:39:24 CET 2024
+java.lang.reflect.InvocationTargetException
+	at java.desktop/java.awt.EventQueue.invokeAndWait(EventQueue.java:1371)
+	at java.desktop/java.awt.EventQueue.invokeAndWait(EventQueue.java:1346)
+	at java.desktop/javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1480)
+	at ui.views.q.c.fNG(SourceFile:81)
+	at ui.data.design.p.cGT(SourceFile:1331)
+	at ui.views.q.L$f.bgO(SourceFile:643)
+	at ui.dlg.c.bj$a.bna(SourceFile:1205)
+	at ui.frmwork.A.run(SourceFile:213)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "javax.swing.JScrollBar.setValue(int)" because the return value of "javax.swing.JScrollPane.getVerticalScrollBar()" is null
+	at ui.utils.swing.q.j.DW(SourceFile:64)
+	at ui.views.q.g.handleEvent(SourceFile:1668)
+	at ui.frmwork.a.c.l(SourceFile:91)
+	at ui.frmwork.a.c.a(SourceFile:56)
+	at ui.project.m.a(SourceFile:504)
+	at ui.views.q.c.ktK(SourceFile:109)
+	at ui.views.q.c.ktN(SourceFile:82)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:308)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:38)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+

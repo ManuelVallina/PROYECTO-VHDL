@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\Universidad\CURSOS\CUARTO\PRIMER CUATRI\SED\LAB\TOPv1\TOP\TOP.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permiso denegado

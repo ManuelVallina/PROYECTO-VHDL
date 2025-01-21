@@ -1,0 +1,311 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Dec 20 13:27:36 2024
+# Process ID: 37324
+# Current directory: D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.runs/synth_1/TOP.vds
+# Journal file: D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.runs/synth_1\vivado.jou
+# Running On        :dani
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:8
+# CPU Logical cores :12
+# Host memory       :16893 MB
+# Swap memory       :12348 MB
+# Total Virtual     :29241 MB
+# Available Virtual :5772 MB
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 487.938 ; gain = 202.320
+Command: read_checkpoint -auto_incremental -incremental {D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/utils_1/imports/synth_1/TOP.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 30760
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1359.020 ; gain = 450.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:48]
+INFO: [Synth 8-3491] module 'SelectorPiso' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:34' bound to instance 'inst_SelectorPiso' of component 'SelectorPiso' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'SelectorPiso' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:42]
+INFO: [Synth 8-3491] module 'BotoneraAntirrebotes' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:34' bound to instance 'BotoneraAnti' of component 'BotoneraAntirrebotes' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'BotoneraAntirrebotes' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:41]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote0' of component 'Antirrebotes' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'Antirrebotes' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Antirrebotes' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:41]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote1' of component 'Antirrebotes' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:58]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote2' of component 'Antirrebotes' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:66]
+INFO: [Synth 8-3491] module 'Antirrebotes' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/Antirrebotes.vhd:34' bound to instance 'Antirrebote3' of component 'Antirrebotes' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'BotoneraAntirrebotes' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/imports/new/BotoneraAntirrebotes.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'SelectorPiso' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/SelectorPiso/SelectorPiso.srcs/sources_1/new/SelectorPiso.vhd:42]
+INFO: [Synth 8-3491] module 'FSM' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:5' bound to instance 'inst_FSM' of component 'FSM' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'FSM' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:20]
+INFO: [Synth 8-3491] module 'Temporizador' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/imports/new/Temporizador.vhd:5' bound to instance 'TEMPORIZADOR_INST' of component 'Temporizador' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Temporizador' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/imports/new/Temporizador.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Temporizador' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/imports/new/Temporizador.vhd:14]
+WARNING: [Synth 8-614] signal 'piso' is read in the process but is not in the sensitivity list [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:58]
+WARNING: [Synth 8-614] signal 'DESEADO' is read in the process but is not in the sensitivity list [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:80]
+WARNING: [Synth 8-614] signal 'objetivo' is read in the process but is not in the sensitivity list [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:80]
+WARNING: [Synth 8-614] signal 'piso' is read in the process but is not in the sensitivity list [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:80]
+WARNING: [Synth 8-614] signal 'piso' is read in the process but is not in the sensitivity list [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:20]
+INFO: [Synth 8-3491] module 'ControlMovimiento' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/Downloads/ControlMovimiento.vhd:26' bound to instance 'inst_ControlMovimiento' of component 'ControlMovimiento' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'ControlMovimiento' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/Downloads/ControlMovimiento.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ControlMovimiento' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/Downloads/ControlMovimiento.vhd:35]
+INFO: [Synth 8-3491] module 'ControlPuertas' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/Downloads/ControlPuertas.vhd:25' bound to instance 'inst_ControlPuertas' of component 'ControlPuertas' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'ControlPuertas' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/Downloads/ControlPuertas.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'ControlPuertas' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/Downloads/ControlPuertas.vhd:34]
+INFO: [Synth 8-3491] module 'MultiplicadorPiso' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/new/MultiplicadorPiso.vhd:25' bound to instance 'passthrough_inst' of component 'MultiplicadorPiso' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'MultiplicadorPiso' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/new/MultiplicadorPiso.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MultiplicadorPiso' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/new/MultiplicadorPiso.vhd:32]
+INFO: [Synth 8-3491] module 'DisplaySnake' declared at 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/new/AnimacionDisplay.vhd:4' bound to instance 'inst_DisplaySnake' of component 'DisplaySnake' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'DisplaySnake' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/new/AnimacionDisplay.vhd:11]
+INFO: [Synth 8-226] default block is never used [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/new/AnimacionDisplay.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'DisplaySnake' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/new/AnimacionDisplay.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/new/TOP.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1469.000 ; gain = 560.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1469.000 ; gain = 560.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1469.000 ; gain = 560.078
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1469.000 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1514.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1514.527 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estoy_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+               validando |                              001 |                              001
+                 abierto |                              010 |                              010
+                 cerrado |                              011 |                              011
+                  marcha |                              100 |                              100
+              actualizar |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estoy_reg' using encoding 'sequential' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'piso_reg' [D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.srcs/sources_1/imports/PROYECTO VHDL/project_1/project_1.srcs/sources_1/new/FSM.vhd:104]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    2 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input    7 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 13    
+	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     2|
+|4     |LUT2   |    66|
+|5     |LUT3   |    14|
+|6     |LUT4   |     4|
+|7     |LUT5   |     9|
+|8     |LUT6   |    21|
+|9     |FDCE   |    45|
+|10    |FDPE   |     6|
+|11    |FDRE   |    12|
+|12    |LD     |     2|
+|13    |LDC    |     6|
+|14    |IBUF   |     6|
+|15    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:35 . Memory (MB): peak = 1514.527 ; gain = 560.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1514.527 ; gain = 605.605
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1514.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1514.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 2 instances
+  LDC => LDCE: 6 instances
+
+Synth Design complete | Checksum: db8e279
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:43 . Memory (MB): peak = 1514.527 ; gain = 1022.344
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1514.527 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Universidad/CURSOS/CUARTO/PRIMER CUATRI/SED/LAB/TOPv1/TOP/TOP.runs/synth_1/TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 13:28:30 2024...
